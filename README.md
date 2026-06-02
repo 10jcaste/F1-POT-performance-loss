@@ -138,6 +138,24 @@ In practical terms, this suggests that, after excluding non-representative laps,
 
 This result should be interpreted within the modelling framework and the data-cleaning criteria used in the analysis. In particular, the upper endpoint refers to relative losses measured with respect to the best lap of the same driver within the same stint, not to absolute lap-time losses over an entire race.
 
+## Figures
+
+### Distribution and POT threshold
+
+![Distribution and POT threshold](figures/figure_1_distribution_threshold.jpg)
+
+### GPD fit to threshold exceedances
+
+![GPD fit to threshold exceedances](figures/figure_2_gpd_exceedances.jpg)
+
+### GPD QQ-plot
+
+![GPD QQ-plot](figures/figure_3_gpd_qqplot.jpg)
+
+### Return levels
+
+![Return levels](figures/figure_4_return_levels.jpg)
+
 ## License
 
 This project is licensed under the MIT License.
