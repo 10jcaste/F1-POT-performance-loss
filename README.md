@@ -12,9 +12,7 @@ The aim of this project is to analyze how large relative performance losses can 
 
 For each lap, a relative performance-loss variable is defined as
 
-$$
-R_i = \frac{T_i - T_{\min,s}}{T_{\min,s}} \cdot 100,
-$$
+$$ R_i = \frac{T_i - T_{\min,s}}{T_{\min,s}} \cdot 100, $$
 
 where:
 
@@ -57,60 +55,31 @@ The analysis follows these steps:
 
 After data cleaning, the final sample contains
 
-$$
-n = 24128
-$$
+$$ n = 24128 $$
 
 laps.
 
 Using the 95th percentile as the POT threshold gives:
 
-$$
-u = 5.212105,
-\qquad
-N_u = 1207,
-\qquad
-N_u/n = 0.05002487.
-$$
+$$ u = 5.212105, \qquad N_u = 1207, \qquad N_u/n = 0.05002487. $$
 
 The fitted Generalized Pareto Distribution gives:
 
-$$
-\hat{\sigma} = 2.692172,
-\qquad
-\hat{\xi} = -0.5383055.
-$$
+$$ \hat{\sigma} = 2.692172, \qquad \hat{\xi} = -0.5383055. $$
 
 The corresponding standard errors are:
 
-$$
-se(\hat{\sigma}) = 0.09904884,
-\qquad
-se(\hat{\xi}) = 0.02766618.
-$$
+$$ se(\hat{\sigma}) = 0.09904884, \qquad se(\hat{\xi}) = 0.02766618. $$
 
 Since the estimated shape parameter is negative, the fitted tail is bounded above. The estimated upper endpoint is
 
-$$
-\hat{\omega}
-============
-
-# u - \frac{\hat{\sigma}}{\hat{\xi}}
-
-10.21330.
-$$
+$$ \hat{\omega} = u - \frac{\hat{\sigma}}{\hat{\xi}} = 10.21330. $$
 
 Therefore, under the fitted POT-GPD model, extreme relative performance losses are estimated to be bounded at approximately 10.21% relative to the best lap of the same driver within the same stint.
 
 As a threshold-stability check, the same analysis was repeated using the 90th percentile as threshold. This produced:
 
-$$
-u_{0.90} = 3.300020,
-\qquad
-\hat{\xi}*{0.90} = -0.4604229,
-\qquad
-\hat{\omega}*{0.90} = 10.49489.
-$$
+$$ u_{0.90} = 3.300020, \qquad \hat{\xi}*{0.90} = -0.4604229, \qquad \hat{\omega}*{0.90} = 10.49489. $$
 
 The negative shape estimates and similar upper endpoints support the interpretation of a bounded upper tail.
 
@@ -172,3 +141,4 @@ This result should be interpreted within the modelling framework and the data-cl
 ## License
 
 This project is licensed under the MIT License.
+
