@@ -1,4 +1,4 @@
-# f1-POT-performance-loss
+# F1-POT-performance-loss
 
 POT-based extreme value analysis of Formula 1 lap-time data from OpenF1.
 
