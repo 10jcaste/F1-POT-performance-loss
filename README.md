@@ -86,7 +86,7 @@ The negative shape estimates and similar upper endpoints support the interpretat
 ## Repository structure
 
 ```text
-f1-POT-performance-loss/
+F1-POT-performance-loss/
 │
 ├── README.md
 ├── LICENSE
